@@ -1,4 +1,25 @@
 #!/usr/bin/env python3
+
+#############################################################
+#                                                           #
+#             Time based attacks demo Program               #
+#                  made by misterm13                        #
+#              (https://github.com/misterm13)               #
+#                                                           #
+#   This Program shows how a time based Authentification    #
+#   attack would be done. If an application has different   #
+#   calculation time of each password char, we can, by      #
+#   measuring the time, determine the password char after   #
+#   char. This can be mitigated by using an calculation     #
+#   algorithm which is time constant for every char.        #
+#   													    #
+#   This code is for educational purpose only. It may be    #
+#   changed, used for further development and shared for    #
+#   free.                                                   #
+#                                                           #
+#                                                           #
+#############################################################
+
 import time
 
 # Educational Example of a Time based weak Authentification

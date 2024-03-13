@@ -1,26 +1,28 @@
 #!/usr/bin/env python3
 
 #############################################################
-#															#
-#			Vigenère Analysis Program						#
-#				made by misterm13							#
-#															#
-#	Used to analyse a Vigenère encrypted text and 			#
-#	probably decrypt it. Program designed in the process	#
-#	of solving the Vigenère encoded text, in context of 	#
-#   exercises of the Cyber Security course, by Dr. Wagner,	#
-#	at Unibas. As it was written in process it might not	#
-#	be a perfect code and have also some rough edges and	#
-#	code inside used for different approach to solve it.	#
-#	This code is for educational purpose only. It may be	#
-#	changed, used for further development and shared for 	#
-#	free. It shows how Vigenère Cipher code can be broken,	#
-#	with a bit of luck.										#
-#	more infos about Vigenère Cipher:						#
-#															#
-#															#
-#															#
+#                                                           #
+#                Vigenère Analysis Program                  #
+#                   made by misterm13                       #
+#             (https://github.com/misterm13)                #
+#                                                           #
+#   Used to analyse a Vigenère encrypted text and           #
+#   probably decrypt it. Program designed in the process    #
+#   of solving the Vigenère encoded text, in context of     #
+#   exercises of the Cyber Security course, by Dr. Wagner,  #
+#   at Unibas. As it was written in process it might not    #
+#   be a perfect code and have also some rough edges and    #
+#   code inside used for different approach to solve it.    #
+#   This code is for educational purpose only. It may be    #
+#   changed, used for further development and shared for    #
+#   free. It shows how Vigenère Cipher code can be broken,  #
+#   with a bit of luck.                                     #
+#   more infos about Vigenère Cipher:                       #
+#   https://en.wikipedia.org/wiki/Vigenère_cipher           #
+#                                                           #
+#                                                           #
 #############################################################
+
 encText = "XEUBZWGDIKHNOFMIGUQBQZSLYGHUJRWPAABWELYCHUNNLOQGFYALLUSAYTZHVCAJWGBTRYNKWAWOQRILAWOFYUVLVHBKCGTXIGJRKLKIENTQZMQHWILFJIMEWGYLGPTMWHVRTTWAAPCHYDGBJHFJCMYQHLURGMMGFNOFHTGNSDKLKIENTQYMGRFRUOMFFHAFWZCSNTXYWAQWOHWQBTYHWYQUUYBMGHKBWDSABVRWIYOBHVREKAQZYYHAZJCBPIKUWHVSTWULSQFSSMIGUNOFNCWQJTZPAWFFTWEBPBTKGUKCZUULLZGRHUJPBMNYEPAJCBPHSZBCPTNNLGHUJFMULOZJNLHTDENNUPXZRXOXPBGQNSUPXZVSEAUBVVXSHPZWGYHWHBHRRPLOIGOJEFTIRRYOWEBFNHTWZASAYISSQRRFSLOIHHSDWYXWAYHWWTSGMOJHWTFJCMYQHLREUOIBVXMKVVSSNNVZLSCQOQLLWAYOVHGGVYLSULGPFPWHBSKYBGVSGUTUDKIZFTIFZBFHHTLOMFRFDWYEVRSAFKPCJYOSWXZLYHWZMTHSDSTMBGFLHYQBPNPDLAOFYHWPBZNSDKJIDRPEWWAQUFNYPVUFJCMYQHLURSJBWGNOFLZGUFVWAWIAIEJZBOAIWZLVTNRIDPIFFJCMYQHLREUOIBVXMKUWZBSGWYIRQWEKZVSJQYWTMFTNNYAPFRFTKVNQBZRKLBVRDADZWVNAELVCBQJRKAIBQMOOAWOCULQAPSFJCMYQHLREUOIBVXMKHBHUJIJKQGCTSSS"
 #encText = "VVHUWWFODFRAPTRBLIPTUCYITHKINOCCFCJEPRUYPGLRVCWLGGXRUSWAKHKSWHOSQYLRIPDGMOWXJSSEUHRVEOUIUCIXJSGEAPHGCIVIKHLWGOJITZBEYOLXKBJJQFWLGBHBVQKERHHVQTOMHSLRVVHYPYQSYBWITFLXQFBSHVRTGOQHFFHEOGZLKQKETSQIXSUWQQOICFEYVTRVGJHVRFHWGBWMPHKIJSDVVGRJVVRWGKKSUSHOVVHQYWWLHOLXJOQHFSWITALRCHLSP" # sample 1 encoded with "CODE"
 #encText = "KBWLGVHETHRJCPXWVZLRIQLXAKKITSWLGGNCUQUERSUWMWVWGRWLGQOSWRVEPRWLGGWVGSWWJIPQGRZMVVWLGFKCVVPSHZLJGHKITSVXQCGESIDMPHOMVHOIDCROUHRVGWWWYCRHGBVLGZYIUKHVGZDHGBZMVVESQYVSHSYITMJIPFHXJSLVUDLRGGFVCQNIFOQHROJIUMHPNCZIFKLXJOJIVVHWESQXQTRPFDDTGFDRFWQOJIQKJSDZAWQXJSDMTKHPECPMPUEMDZLSRVLPGGDRFKDRFSUITGDPKYHMPHRMVGFSBMHQDFDGGOPMFGWLGQKEQGRJVVHQGHUSRCOMUHKMUPRSMGWSTSZEUOQSCGLWQTFENAD" # sample 2 encoded with "CODE"
