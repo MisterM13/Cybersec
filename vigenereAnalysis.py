@@ -223,4 +223,4 @@ print("\x1b[1;31;40m > 16% Probability \x1b[0m \n")
 for i in freq:
 	print(deriveKey(7,i))
 	
-print(tryKey("FASHION"))
+#print(tryKey("CODE"))
