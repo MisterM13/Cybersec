@@ -1,6 +1,6 @@
 #######################################################
 #                                                     #
-#                   Skytale Encoder                   #
+#                   Skytale Decoder                   #
 #                    by MisterM13                     #
 #             (https://github.com/misterm13)          #
 #                                                     #
