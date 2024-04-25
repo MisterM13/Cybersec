@@ -12,7 +12,7 @@
 #   measuring the time, determine the password char after   #
 #   char. This can be mitigated by using an calculation     #
 #   algorithm which is time constant for every char.        #
-#   													    #
+#                                                           #
 #   This code is for educational purpose only. It may be    #
 #   changed, used for further development and shared for    #
 #   free.                                                   #
